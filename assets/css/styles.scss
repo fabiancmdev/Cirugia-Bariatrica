@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'AchsNuevaSansLight';
+    src: url('../fonts/ACHSNuevaSans-Light.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSansRegular';
+    src: url('../fonts/ACHSNuevaSans-Regular.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSansBold';
+    src: url('../fonts/ACHSNuevaSans-Bold.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSerifMedium';
+    src: url('../fonts/ACHSNuevaSerif-Medium.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSerif-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSerifBold';
+    src: url('../fonts/ACHSNuevaSerif-Bold.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSerif-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    transition: all .2s ease-in-out;
+}
+.htCirugiaBar{
+    h1, h2, a{
+        font-family: 'AchsNuevaSerifBold';
+    }
+    h4, h6{
+        font-family: 'AchsNuevaSansBold';
+    }
+    h5{
+        font-family: 'AchsNuevaSerifMedium';
+    }
+    span{
+        font-family: 'AchsNuevaSansLight';
+    }
+    p, ul li{
+        font-family: 'AchsNuevaSansRegular';
+        &.featured{
+            background-color: #EAF3FE;
+            line-height: 30px;
+        }
+    }
+    color: #373737;
+    a{
+        &.btn-reserve{
+            background-color: #348fff;
+            color: white;
+            text-decoration: none;
+            &:hover{
+                background-color: #002A6C;
+            }
+        }
+    }
+    .prices{
+        &__box{
+            background-color: #002A6C;
+            h4{
+                color: #7EFF45;
+            }
+            p,span{
+                font-size: 14px;
+            }
+            &-only{
+                background-color: #fff;
+            }
+            h6, strong{
+                color: #348fff;
+                &.pb-3{
+                    border-bottom: 1px solid #348fff;
+                }
+            }
+            strong{
+                font-family: 'AchsNuevaSansBold';
+            }
+        }
+    }
+    .tipoCirugias{
+        &__box{
+            background-color: #D5E8FD;
+            text-align: left;
+            figure{
+                align-items: center;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                height: 70px;
+                width: 70px;
+                img{
+                    height: 40px;
+                    width: 37px;
+                }
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+    }
+    .equipoCirugia{
+        .splide__arrow{
+            bottom: -10px;
+            top: inherit;
+        }
+        &__card{
+            color: #787878;
+            text-align: left;
+            height: 100%;
+            figure{
+                height: 207px;
+                img{
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
