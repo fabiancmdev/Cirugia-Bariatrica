@@ -226,7 +226,6 @@
 }
 .ht_SalaDeEspera__admision .row-steps .datosBox, .ht_SalaDeEspera__atencionMedica .row-steps .datosBox, .ht_SalaDeEspera__postAtencion .row-steps .datosBox {
   background-color: #EAF3FE;
-  max-width: 400px;
 }
 .ht_SalaDeEspera__admision .row-steps .datosBox ul li, .ht_SalaDeEspera__atencionMedica .row-steps .datosBox ul li, .ht_SalaDeEspera__postAtencion .row-steps .datosBox ul li {
   color: #5f5f5f;
@@ -363,4 +362,10 @@
 }
 .ht_SalaDeEspera__more-info-box p, .ht_SalaDeEspera__more-aboutAchs-box p {
   color: #373737;
+}
+
+@media (min-width: 992px) {
+  .ht_SalaDeEspera__postAtencion .row-steps .datosBox {
+    max-width: 400px;
+  }
 }/*# sourceMappingURL=styles.css.map */
