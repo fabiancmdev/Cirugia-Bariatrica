@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención médica | Sala de Espera HT</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="ht_SalaDeEspera ht_SalaDeEspera__atencionMedica">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <ul class="list-group list-group-horizontal justify-content-center mb-4">
+                        <li class="list-group-item rounded-start-4 p-0">
+                            <a class="py-2 px-3 py-lg-3 px-lg-5 mx-lg-4" href="admision.html"">
+                                Admisión
+                            </a>
+                        </li>
+                        <li class="list-group-item active p-0">
+                            <a class="py-2 px-3 py-lg-3 px-lg-5 mx-lg-4" href="atencion-medica.html">
+                                Atención médica
+                            </a>
+                        </li>
+                        <li class="list-group-item rounded-end-4 p-0">
+                            <a class="py-2 px-3 py-lg-3 px-lg-5 mx-lg-4" href="post-atencion.html">
+                                Post atención médica
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <h3 class="my-4 text-center">
+                        Antes de la atención asegúrate de tener la siguiente información a mano:
+                    </h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="accordion ht_SalaDeEspera__atencionMedica-accordion mb-2" id="accordionHistorial">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Historial clínico
+                                            <svg class="icon-plus" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.96 24.96">
+                                                <path d="M24.55,11.45c-.28-.28-.62-.41-1.03-.41H13.92V1.44c0-.41-.14-.75-.41-1.03-.28-.28-.62-.41-1.03-.41s-.75,.14-1.03,.41-.41,.62-.41,1.03V11.04H1.44c-.41,0-.75,.14-1.03,.41-.28,.28-.41,.62-.41,1.03s.14,.75,.41,1.03c.28,.28,.62,.41,1.03,.41H11.04v9.6c0,.41,.14,.75,.41,1.03s.62,.41,1.03,.41,.75-.14,1.03-.41c.28-.28,.41-.62,.41-1.03V13.92h9.6c.41,0,.75-.14,1.03-.41s.41-.62,.41-1.03-.14-.75-.41-1.03Z"/>
+                                            </svg>
+                                            <svg class="icon-minus" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 2.25">
+                                                <path d="M19.18,.32c-.22-.22-.48-.32-.8-.32H1.12C.81,0,.54,.11,.32,.32s-.32,.48-.32,.8,.11,.59,.32,.8c.22,.22,.48,.32,.8,.32H18.38c.32,0,.59-.11,.8-.32,.22-.22,.32-.48,.32-.8s-.11-.59-.32-.8Z"/>
+                                            </svg>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionHistorial">
+                                        <div class="accordion-body p-2">
+                                            <ol class="list-group list-group-flush list-group-numbered">
+                                                <li class="list-group-item">¿Cuál es tu RUT?</li>
+                                                <li class="list-group-item">¿A qué eres alérgico?</li>
+                                                <li class="list-group-item">¿Tienes alguna enfermedad?</li>
+                                                <li class="list-group-item">¿Tomas medicamentos?</li>
+                                                <li class="list-group-item">¿Te han operado?</li>
+                                                <li class="list-group-item">Antecedentes familiares de alguna enfermedad</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion ht_SalaDeEspera__atencionMedica-accordion" id="accordionMotivo">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Motivo de consulta
+                                            <svg class="icon-plus" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.96 24.96">
+                                                <path d="M24.55,11.45c-.28-.28-.62-.41-1.03-.41H13.92V1.44c0-.41-.14-.75-.41-1.03-.28-.28-.62-.41-1.03-.41s-.75,.14-1.03,.41-.41,.62-.41,1.03V11.04H1.44c-.41,0-.75,.14-1.03,.41-.28,.28-.41,.62-.41,1.03s.14,.75,.41,1.03c.28,.28,.62,.41,1.03,.41H11.04v9.6c0,.41,.14,.75,.41,1.03s.62,.41,1.03,.41,.75-.14,1.03-.41c.28-.28,.41-.62,.41-1.03V13.92h9.6c.41,0,.75-.14,1.03-.41s.41-.62,.41-1.03-.14-.75-.41-1.03Z"/>
+                                            </svg>
+                                            <svg class="icon-minus" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 2.25">
+                                                <path d="M19.18,.32c-.22-.22-.48-.32-.8-.32H1.12C.81,0,.54,.11,.32,.32s-.32,.48-.32,.8,.11,.59,.32,.8c.22,.22,.48,.32,.8,.32H18.38c.32,0,.59-.11,.8-.32,.22-.22,.32-.48,.32-.8s-.11-.59-.32-.8Z"/>
+                                            </svg>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMotivo">
+                                        <div class="accordion-body p-2">
+                                            <ol class="list-group list-group-flush list-group-numbered">
+                                                <li class="list-group-item">¿Cuándo comenzó?</li>
+                                                <li class="list-group-item">¿Cuáles son tus dolores?</li>
+                                                <li class="list-group-item">¿Cuando aumenta tu dolor? (Ej: subo la escalera, tomo el celular, etc.)</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ht_SalaDeEspera ht_SalaDeEspera__more-aboutAchs py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-2">
+                        Conoce más sobre AchsSalud
+                    </h2>
+                    <h5 class="mb-4">
+                        Explora nuestras noticias
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="ht_SalaDeEspera__more-aboutAchs-box d-flex flex-column p-4 h-100">
+                        <figure class="mb-2 rounded-4 overflow-hidden">
+                            <img class="img-fluid" src="assets/images/frontHT.jpg" alt="">
+                        </figure>
+                        <span class="tag rounded py-1 px-2 mb-2">
+                            <svg class="icon-doctor me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.99 44">
+                                <path d="M32.34,36.44c.36,0,.64-.29,.64-.64v-3.58c0-2.5-1.54-4.89-3.75-5.8,0,0,0,0-.01,0-.36-.14-8.29-3.21-8.65-3.35v-1.68c1.47-1.08,2.5-2.74,2.73-4.65,1.68-.13,2.93-1.47,2.93-3.02,0-1.06-.56-2.05-1.4-2.62,.1-.22,.15-.47,.15-.73V5.41c0-1.55-1.34-2.68-2.72-2.58-.27,.02-.5-.14-.55-.38-.32-1.65-1.36-2.45-3.18-2.45h-1.6c-.36,0-.64,.29-.64,.64s.29,.64,.64,.64h1.6c1.51,0,1.77,.67,1.91,1.41,.17,.88,1,1.49,1.92,1.42,.65-.05,1.33,.51,1.33,1.29v4.95c0,.41-.45,.74-1.22,.36-.94-.46-.88-1.42-.9-1.55-.12-.71-1.08-.87-1.42-.23-.63,1.19-1.87,1.95-3.24,1.95h-7.38c-.64,0-1.17-.52-1.17-1.17V4.97c0-2.03,1.65-3.68,3.68-3.68h1.9c.36,0,.64-.29,.64-.64s-.29-.64-.64-.64h-1.9c-2.74,0-4.97,2.23-4.97,4.97v4.74c0,.68,.28,1.3,.73,1.74-.63,.58-1.02,1.4-1.02,2.26,0,1.54,1.24,2.88,2.92,3.02,.22,1.87,1.21,3.54,2.72,4.64v1.69s-8.61,3.34-8.65,3.36c0,0,0,0-.01,0-1.81,.74-3.75,2.88-3.75,5.8v10.03c0,.97,.79,1.76,1.76,1.76H31.23c.97,0,1.76-.79,1.76-1.76v-3.44c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v3.44c0,.26-.21,.47-.47,.47h-3.43v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46h-1.3v-3.6c0-1.61-1.15-2.96-2.68-3.26v-3.17l.5-.57c.46-.39,.61-1.03,.36-1.59l-.62-1.38s0-.06,.02-.07h0l1.41-1.05c.34-.25,.54-.66,.54-1.08v-.89l4.01,1.55c1.58,.65,2.95,2.49,2.95,4.6v3.58c0,.36,.29,.64,.64,.64ZM23.34,12.16c.08,0,.34-.06,.53-.14,.62,.29,1.06,.96,1.06,1.68,0,.88-.7,1.58-1.59,1.72v-3.26Zm-13.7,3.26c-.88-.14-1.59-.84-1.59-1.72,0-.63,.39-1.26,.98-1.58,.27,.05,.47,.05,.61,.05v3.25Zm1.29,.49v-3.74h5.97c1.44,0,2.76-.62,3.67-1.62,.3,.62,.83,1.12,1.46,1.39,0,0,.01,0,.02,0v3.97c0,2.98-2.42,5.47-5.47,5.47-3.31,0-5.65-2.55-5.65-5.47Zm6.21,10.7c.64-.52,2.06-1.68,2.93-2.37,0,0,.28,.11,.28,.11-1.2,3.76-.79,2.5-1.32,4.16-.37-.37-.43-.43-1.9-1.9Zm1.46,3.28l-.14,.44-.24-.81,.38,.38Zm-4.6-1.44l-1.31-4.13c.08-.03,.14-.05,.21-.08,.82,.66,2.15,1.73,2.94,2.37-.2,.2-1.59,1.59-1.84,1.84Zm.76,1.07l-.19,.74-.14-.43,.32-.32h0Zm-1.06-7.42c1.78,.76,3.78,.78,5.57,.02,0,1.05,0,1,.01,1.11-.78,.62-1.99,1.6-2.8,2.26-.81-.66-2.02-1.64-2.8-2.26,.01-.11,0-.06,0-1.13Zm2.79,5.69l.73,.73-.12,.33h-1.21l-.12-.33c.07-.07,.63-.63,.73-.73Zm-6.88-2.27l1.87-.73c.09,.3,3.3,10.4,3.5,11.01l-4.02-4.59s-.06-.06-.1-.09c-.02-.02-.03-.05-.02-.07l.62-1.38c.26-.58,.09-1.26-.42-1.64l-1.41-1.05s-.02-.03-.02-.05v-1.42Zm1.47,11.75c.8,.02,1.45,.67,1.45,1.48s-.66,1.48-1.48,1.48-1.48-.66-1.48-1.48c0-.73,.53-1.44,1.51-1.48Zm4.8,5.44H6.55v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46H1.76c-.26,0-.47-.21-.47-.47v-10.03c0-2.22,1.48-4,2.95-4.6l4.09-1.59v.92c0,.42,.2,.83,.54,1.08l1.41,1.05s.03,.05,.02,.07l-.62,1.38c-.25,.55-.1,1.2,.36,1.59l.39,.44v3.51c-1.22,.29-2.13,1.39-2.13,2.69,0,1.53,1.24,2.77,2.77,2.77s2.77-1.24,2.77-2.77c0-1.3-.91-2.4-2.12-2.69v-2.04l4.18,4.78v3.92Zm-.57-10.12l.63-2.46h1.12l.7,2.41-1.23,3.88-1.22-3.83Zm3.25,6.51v3.6h-1.39v-3.92l4.07-4.64v1.7h0c-1.52,.3-2.68,1.65-2.68,3.26Zm5.35,0v3.6h-4.06v-3.6c0-1.12,.91-2.03,2.03-2.03s2.03,.91,2.03,2.03Zm-.47-12.17s0,.04-.02,.05l-1.41,1.05c-.51,.38-.68,1.06-.42,1.64l.62,1.38s0,.06-.02,.07c-.03,.03-.07,.06-.1,.09l-4.02,4.59c.09-.3,3.45-10.85,3.49-10.98l1.88,.73v1.38Z"/>
+                                <path d="M11.05,39.4c.35,0,.64-.28,.64-.64,0-.32-.23-.58-.52-.63-.4-.08-.77,.23-.77,.63,0,.36,.29,.64,.64,.64Z"/>
+                            </svg>
+                            Hospital del trabajador
+                        </span>
+                        <h5 class="mb-3">
+                            Prevención de Riesgos Laborales
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Ut lobortis tellus et venenatis at sed a. Quam ornare pulvinar orci elit.
+                        </p>
+                        <span class="timeRead mb-3">
+                            <svg class="icon-clock me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M8,0C3.58,0,0,3.58,0,8s3.58,8,8,8,8-3.58,8-8S12.42,0,8,0Zm0,14.4c-3.54,0-6.4-2.86-6.4-6.4S4.46,1.6,8,1.6s6.4,2.86,6.4,6.4-2.86,6.4-6.4,6.4Z"/>
+                                <path d="M8.8,7.67V3.2c0-.44-.36-.8-.8-.8s-.8,.36-.8,.8v4.8c0,.22,.09,.42,.23,.57l2.4,2.4c.14,.14,.34,.23,.57,.23,.44,0,.8-.36,.8-.8,0-.22-.09-.42-.23-.57l-2.17-2.16Z"/>
+                            </svg>
+                            Duración de lectura
+                        </span>
+                        <a class="btn-primaryHt rounded-pill text-center py-2 w-100" href="#" title="Leer artículo">
+                            Leer artículo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="ht_SalaDeEspera__more-aboutAchs-box d-flex flex-column p-4 h-100">
+                        <figure class="mb-2 rounded-4 overflow-hidden">
+                            <img class="img-fluid" src="assets/images/frontHT.jpg" alt="">
+                        </figure>
+                        <span class="tag rounded py-1 px-2 mb-2">
+                            <svg class="icon-doctor me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.99 44">
+                                <path d="M32.34,36.44c.36,0,.64-.29,.64-.64v-3.58c0-2.5-1.54-4.89-3.75-5.8,0,0,0,0-.01,0-.36-.14-8.29-3.21-8.65-3.35v-1.68c1.47-1.08,2.5-2.74,2.73-4.65,1.68-.13,2.93-1.47,2.93-3.02,0-1.06-.56-2.05-1.4-2.62,.1-.22,.15-.47,.15-.73V5.41c0-1.55-1.34-2.68-2.72-2.58-.27,.02-.5-.14-.55-.38-.32-1.65-1.36-2.45-3.18-2.45h-1.6c-.36,0-.64,.29-.64,.64s.29,.64,.64,.64h1.6c1.51,0,1.77,.67,1.91,1.41,.17,.88,1,1.49,1.92,1.42,.65-.05,1.33,.51,1.33,1.29v4.95c0,.41-.45,.74-1.22,.36-.94-.46-.88-1.42-.9-1.55-.12-.71-1.08-.87-1.42-.23-.63,1.19-1.87,1.95-3.24,1.95h-7.38c-.64,0-1.17-.52-1.17-1.17V4.97c0-2.03,1.65-3.68,3.68-3.68h1.9c.36,0,.64-.29,.64-.64s-.29-.64-.64-.64h-1.9c-2.74,0-4.97,2.23-4.97,4.97v4.74c0,.68,.28,1.3,.73,1.74-.63,.58-1.02,1.4-1.02,2.26,0,1.54,1.24,2.88,2.92,3.02,.22,1.87,1.21,3.54,2.72,4.64v1.69s-8.61,3.34-8.65,3.36c0,0,0,0-.01,0-1.81,.74-3.75,2.88-3.75,5.8v10.03c0,.97,.79,1.76,1.76,1.76H31.23c.97,0,1.76-.79,1.76-1.76v-3.44c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v3.44c0,.26-.21,.47-.47,.47h-3.43v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46h-1.3v-3.6c0-1.61-1.15-2.96-2.68-3.26v-3.17l.5-.57c.46-.39,.61-1.03,.36-1.59l-.62-1.38s0-.06,.02-.07h0l1.41-1.05c.34-.25,.54-.66,.54-1.08v-.89l4.01,1.55c1.58,.65,2.95,2.49,2.95,4.6v3.58c0,.36,.29,.64,.64,.64ZM23.34,12.16c.08,0,.34-.06,.53-.14,.62,.29,1.06,.96,1.06,1.68,0,.88-.7,1.58-1.59,1.72v-3.26Zm-13.7,3.26c-.88-.14-1.59-.84-1.59-1.72,0-.63,.39-1.26,.98-1.58,.27,.05,.47,.05,.61,.05v3.25Zm1.29,.49v-3.74h5.97c1.44,0,2.76-.62,3.67-1.62,.3,.62,.83,1.12,1.46,1.39,0,0,.01,0,.02,0v3.97c0,2.98-2.42,5.47-5.47,5.47-3.31,0-5.65-2.55-5.65-5.47Zm6.21,10.7c.64-.52,2.06-1.68,2.93-2.37,0,0,.28,.11,.28,.11-1.2,3.76-.79,2.5-1.32,4.16-.37-.37-.43-.43-1.9-1.9Zm1.46,3.28l-.14,.44-.24-.81,.38,.38Zm-4.6-1.44l-1.31-4.13c.08-.03,.14-.05,.21-.08,.82,.66,2.15,1.73,2.94,2.37-.2,.2-1.59,1.59-1.84,1.84Zm.76,1.07l-.19,.74-.14-.43,.32-.32h0Zm-1.06-7.42c1.78,.76,3.78,.78,5.57,.02,0,1.05,0,1,.01,1.11-.78,.62-1.99,1.6-2.8,2.26-.81-.66-2.02-1.64-2.8-2.26,.01-.11,0-.06,0-1.13Zm2.79,5.69l.73,.73-.12,.33h-1.21l-.12-.33c.07-.07,.63-.63,.73-.73Zm-6.88-2.27l1.87-.73c.09,.3,3.3,10.4,3.5,11.01l-4.02-4.59s-.06-.06-.1-.09c-.02-.02-.03-.05-.02-.07l.62-1.38c.26-.58,.09-1.26-.42-1.64l-1.41-1.05s-.02-.03-.02-.05v-1.42Zm1.47,11.75c.8,.02,1.45,.67,1.45,1.48s-.66,1.48-1.48,1.48-1.48-.66-1.48-1.48c0-.73,.53-1.44,1.51-1.48Zm4.8,5.44H6.55v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46H1.76c-.26,0-.47-.21-.47-.47v-10.03c0-2.22,1.48-4,2.95-4.6l4.09-1.59v.92c0,.42,.2,.83,.54,1.08l1.41,1.05s.03,.05,.02,.07l-.62,1.38c-.25,.55-.1,1.2,.36,1.59l.39,.44v3.51c-1.22,.29-2.13,1.39-2.13,2.69,0,1.53,1.24,2.77,2.77,2.77s2.77-1.24,2.77-2.77c0-1.3-.91-2.4-2.12-2.69v-2.04l4.18,4.78v3.92Zm-.57-10.12l.63-2.46h1.12l.7,2.41-1.23,3.88-1.22-3.83Zm3.25,6.51v3.6h-1.39v-3.92l4.07-4.64v1.7h0c-1.52,.3-2.68,1.65-2.68,3.26Zm5.35,0v3.6h-4.06v-3.6c0-1.12,.91-2.03,2.03-2.03s2.03,.91,2.03,2.03Zm-.47-12.17s0,.04-.02,.05l-1.41,1.05c-.51,.38-.68,1.06-.42,1.64l.62,1.38s0,.06-.02,.07c-.03,.03-.07,.06-.1,.09l-4.02,4.59c.09-.3,3.45-10.85,3.49-10.98l1.88,.73v1.38Z"/>
+                                <path d="M11.05,39.4c.35,0,.64-.28,.64-.64,0-.32-.23-.58-.52-.63-.4-.08-.77,.23-.77,.63,0,.36,.29,.64,.64,.64Z"/>
+                            </svg>
+                            Hospital del trabajador
+                        </span>
+                        <h5 class="mb-3">
+                            Prevención de Riesgos Laborales
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Ut lobortis tellus et venenatis at sed a. Quam ornare pulvinar orci elit.
+                        </p>
+                        <span class="timeRead mb-3">
+                            <svg class="icon-clock me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M8,0C3.58,0,0,3.58,0,8s3.58,8,8,8,8-3.58,8-8S12.42,0,8,0Zm0,14.4c-3.54,0-6.4-2.86-6.4-6.4S4.46,1.6,8,1.6s6.4,2.86,6.4,6.4-2.86,6.4-6.4,6.4Z"/>
+                                <path d="M8.8,7.67V3.2c0-.44-.36-.8-.8-.8s-.8,.36-.8,.8v4.8c0,.22,.09,.42,.23,.57l2.4,2.4c.14,.14,.34,.23,.57,.23,.44,0,.8-.36,.8-.8,0-.22-.09-.42-.23-.57l-2.17-2.16Z"/>
+                            </svg>
+                            Duración de lectura
+                        </span>
+                        <a class="btn-primaryHt rounded-pill text-center py-2 w-100" href="#" title="Leer artículo">
+                            Leer artículo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="ht_SalaDeEspera__more-aboutAchs-box d-flex flex-column p-4 h-100">
+                        <figure class="mb-2 rounded-4 overflow-hidden">
+                            <img class="img-fluid" src="assets/images/frontHT.jpg" alt="">
+                        </figure>
+                        <span class="tag rounded py-1 px-2 mb-2">
+                            <svg class="icon-doctor me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.99 44">
+                                <path d="M32.34,36.44c.36,0,.64-.29,.64-.64v-3.58c0-2.5-1.54-4.89-3.75-5.8,0,0,0,0-.01,0-.36-.14-8.29-3.21-8.65-3.35v-1.68c1.47-1.08,2.5-2.74,2.73-4.65,1.68-.13,2.93-1.47,2.93-3.02,0-1.06-.56-2.05-1.4-2.62,.1-.22,.15-.47,.15-.73V5.41c0-1.55-1.34-2.68-2.72-2.58-.27,.02-.5-.14-.55-.38-.32-1.65-1.36-2.45-3.18-2.45h-1.6c-.36,0-.64,.29-.64,.64s.29,.64,.64,.64h1.6c1.51,0,1.77,.67,1.91,1.41,.17,.88,1,1.49,1.92,1.42,.65-.05,1.33,.51,1.33,1.29v4.95c0,.41-.45,.74-1.22,.36-.94-.46-.88-1.42-.9-1.55-.12-.71-1.08-.87-1.42-.23-.63,1.19-1.87,1.95-3.24,1.95h-7.38c-.64,0-1.17-.52-1.17-1.17V4.97c0-2.03,1.65-3.68,3.68-3.68h1.9c.36,0,.64-.29,.64-.64s-.29-.64-.64-.64h-1.9c-2.74,0-4.97,2.23-4.97,4.97v4.74c0,.68,.28,1.3,.73,1.74-.63,.58-1.02,1.4-1.02,2.26,0,1.54,1.24,2.88,2.92,3.02,.22,1.87,1.21,3.54,2.72,4.64v1.69s-8.61,3.34-8.65,3.36c0,0,0,0-.01,0-1.81,.74-3.75,2.88-3.75,5.8v10.03c0,.97,.79,1.76,1.76,1.76H31.23c.97,0,1.76-.79,1.76-1.76v-3.44c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v3.44c0,.26-.21,.47-.47,.47h-3.43v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46h-1.3v-3.6c0-1.61-1.15-2.96-2.68-3.26v-3.17l.5-.57c.46-.39,.61-1.03,.36-1.59l-.62-1.38s0-.06,.02-.07h0l1.41-1.05c.34-.25,.54-.66,.54-1.08v-.89l4.01,1.55c1.58,.65,2.95,2.49,2.95,4.6v3.58c0,.36,.29,.64,.64,.64ZM23.34,12.16c.08,0,.34-.06,.53-.14,.62,.29,1.06,.96,1.06,1.68,0,.88-.7,1.58-1.59,1.72v-3.26Zm-13.7,3.26c-.88-.14-1.59-.84-1.59-1.72,0-.63,.39-1.26,.98-1.58,.27,.05,.47,.05,.61,.05v3.25Zm1.29,.49v-3.74h5.97c1.44,0,2.76-.62,3.67-1.62,.3,.62,.83,1.12,1.46,1.39,0,0,.01,0,.02,0v3.97c0,2.98-2.42,5.47-5.47,5.47-3.31,0-5.65-2.55-5.65-5.47Zm6.21,10.7c.64-.52,2.06-1.68,2.93-2.37,0,0,.28,.11,.28,.11-1.2,3.76-.79,2.5-1.32,4.16-.37-.37-.43-.43-1.9-1.9Zm1.46,3.28l-.14,.44-.24-.81,.38,.38Zm-4.6-1.44l-1.31-4.13c.08-.03,.14-.05,.21-.08,.82,.66,2.15,1.73,2.94,2.37-.2,.2-1.59,1.59-1.84,1.84Zm.76,1.07l-.19,.74-.14-.43,.32-.32h0Zm-1.06-7.42c1.78,.76,3.78,.78,5.57,.02,0,1.05,0,1,.01,1.11-.78,.62-1.99,1.6-2.8,2.26-.81-.66-2.02-1.64-2.8-2.26,.01-.11,0-.06,0-1.13Zm2.79,5.69l.73,.73-.12,.33h-1.21l-.12-.33c.07-.07,.63-.63,.73-.73Zm-6.88-2.27l1.87-.73c.09,.3,3.3,10.4,3.5,11.01l-4.02-4.59s-.06-.06-.1-.09c-.02-.02-.03-.05-.02-.07l.62-1.38c.26-.58,.09-1.26-.42-1.64l-1.41-1.05s-.02-.03-.02-.05v-1.42Zm1.47,11.75c.8,.02,1.45,.67,1.45,1.48s-.66,1.48-1.48,1.48-1.48-.66-1.48-1.48c0-.73,.53-1.44,1.51-1.48Zm4.8,5.44H6.55v-9.46c0-.36-.29-.64-.64-.64s-.64,.29-.64,.64v9.46H1.76c-.26,0-.47-.21-.47-.47v-10.03c0-2.22,1.48-4,2.95-4.6l4.09-1.59v.92c0,.42,.2,.83,.54,1.08l1.41,1.05s.03,.05,.02,.07l-.62,1.38c-.25,.55-.1,1.2,.36,1.59l.39,.44v3.51c-1.22,.29-2.13,1.39-2.13,2.69,0,1.53,1.24,2.77,2.77,2.77s2.77-1.24,2.77-2.77c0-1.3-.91-2.4-2.12-2.69v-2.04l4.18,4.78v3.92Zm-.57-10.12l.63-2.46h1.12l.7,2.41-1.23,3.88-1.22-3.83Zm3.25,6.51v3.6h-1.39v-3.92l4.07-4.64v1.7h0c-1.52,.3-2.68,1.65-2.68,3.26Zm5.35,0v3.6h-4.06v-3.6c0-1.12,.91-2.03,2.03-2.03s2.03,.91,2.03,2.03Zm-.47-12.17s0,.04-.02,.05l-1.41,1.05c-.51,.38-.68,1.06-.42,1.64l.62,1.38s0,.06-.02,.07c-.03,.03-.07,.06-.1,.09l-4.02,4.59c.09-.3,3.45-10.85,3.49-10.98l1.88,.73v1.38Z"/>
+                                <path d="M11.05,39.4c.35,0,.64-.28,.64-.64,0-.32-.23-.58-.52-.63-.4-.08-.77,.23-.77,.63,0,.36,.29,.64,.64,.64Z"/>
+                            </svg>
+                            Hospital del trabajador
+                        </span>
+                        <h5 class="mb-3">
+                            Prevención de Riesgos Laborales
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Ut lobortis tellus et venenatis at sed a. Quam ornare pulvinar orci elit.
+                        </p>
+                        <span class="timeRead mb-3">
+                            <svg class="icon-clock me-1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M8,0C3.58,0,0,3.58,0,8s3.58,8,8,8,8-3.58,8-8S12.42,0,8,0Zm0,14.4c-3.54,0-6.4-2.86-6.4-6.4S4.46,1.6,8,1.6s6.4,2.86,6.4,6.4-2.86,6.4-6.4,6.4Z"/>
+                                <path d="M8.8,7.67V3.2c0-.44-.36-.8-.8-.8s-.8,.36-.8,.8v4.8c0,.22,.09,.42,.23,.57l2.4,2.4c.14,.14,.34,.23,.57,.23,.44,0,.8-.36,.8-.8,0-.22-.09-.42-.23-.57l-2.17-2.16Z"/>
+                            </svg>
+                            Duración de lectura
+                        </span>
+                        <a class="btn-primaryHt rounded-pill text-center py-2 w-100" href="#" title="Leer artículo">
+                            Leer artículo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ht_SalaDeEspera ht_SalaDeEspera__didYouKnow py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-2">
+                        Sabías qué...
+                    </h2>
+                    <h5 class="mb-4">
+                        mantenerse ocupado mientras se espera puede hacer que el tiempo parezca pasar más rápido
+                    </h5>
+                    <div class="ht_SalaDeEspera__didYouKnow-box d-flex flex-column p-4 mb-4">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="mb-2 rounded-4 overflow-hidden">
+                                    <img class="img-fluid" src="assets/images/crucigrama.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="text-center text-lg-start">
+                                    Crucigrama
+                                </h4>
+                                <p class="d-none d-lg-block">
+                                    Se deben descubrir palabras que se entrecruzan en una cuadrícula, a partir de unas definiciones o sugerencias que se proporcionan y de las pistas que van generándose con el conocimiento de las letras de otras palabras que hayamos acertado.
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 text-lg-end">
+                                        <a class="btn-primaryHt rounded-pill text-center py-2 px-4 w-100 d-block d-lg-inline" href="#" title="Jugar Crucigrama">
+                                            Jugar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ht_SalaDeEspera__didYouKnow-box d-flex flex-column p-4 mb-4">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="mb-2 rounded-4 overflow-hidden">
+                                    <img class="img-fluid" src="assets/images/sopa-letras.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="text-center text-lg-start">
+                                    Sopa de letras
+                                </h4>
+                                <p class="d-none d-lg-block">
+                                    Las sopas de letras tienen generalmente entre 10 y 20 palabras. Si haces un juego muy grande, puedes tener más palabras.
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 text-lg-end">
+                                        <a class="btn-primaryHt rounded-pill text-center py-2 px-4 w-100 d-block d-lg-inline" href="#" title="Jugar Sopa de letras">
+                                            Jugar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ht_SalaDeEspera__didYouKnow-box d-flex flex-column p-4 mb-4">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="mb-2 rounded-4 overflow-hidden">
+                                    <img class="img-fluid" src="assets/images/sudoku.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="text-center text-lg-start">
+                                    Sudoku
+                                </h4>
+                                <p class="d-none d-lg-block">
+                                    El conocido juego tipo puzle japonés llamado sudoku se basa en la colocación lógica de números. El sudoku gratis es un juego en línea de lógica, que no requiere realizar cálculos ni tener habilidades matemáticas especiales; solo se necesita cerebro y concentración.
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 text-lg-end">
+                                        <a class="btn-primaryHt rounded-pill text-center py-2 px-4 w-100 d-block d-lg-inline" href="#" title="Jugar Sopa de letras">
+                                            Jugar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

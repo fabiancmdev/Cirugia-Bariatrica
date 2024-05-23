@@ -13,9 +13,23 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "AchsNuevaSansMedium";
+  src: url("../fonts/ACHSNuevaSans-Medium.woff2") format("woff2"), url("../fonts/ACHSNuevaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "AchsNuevaSansBold";
   src: url("../fonts/ACHSNuevaSans-Bold.woff2") format("woff2"), url("../fonts/ACHSNuevaSans-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AchsNuevaSerifRegular";
+  src: url("../fonts/ACHSNuevaSerif-Regular.woff2") format("woff2"), url("../fonts/ACHSNuevaSerif-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -37,99 +51,316 @@
   transition: all 0.2s ease-in-out;
 }
 
-.htCirugiaBar {
+.ht_SalaDeEspera {
   color: #373737;
 }
-.htCirugiaBar h1, .htCirugiaBar h2, .htCirugiaBar a {
+.ht_SalaDeEspera h1, .ht_SalaDeEspera h2 {
   font-family: "AchsNuevaSerifBold";
 }
-.htCirugiaBar h4, .htCirugiaBar h6 {
+.ht_SalaDeEspera h1 span, .ht_SalaDeEspera h2 span {
+  color: #348fff;
+  font-family: "AchsNuevaSerifBold";
+}
+.ht_SalaDeEspera h3, .ht_SalaDeEspera h4 {
+  font-family: "AchsNuevaSerifRegular";
+}
+.ht_SalaDeEspera h6 {
   font-family: "AchsNuevaSansBold";
 }
-.htCirugiaBar h5 {
-  font-family: "AchsNuevaSerifMedium";
-}
-.htCirugiaBar span {
+.ht_SalaDeEspera span {
   font-family: "AchsNuevaSansLight";
 }
-.htCirugiaBar p, .htCirugiaBar ul li {
+.ht_SalaDeEspera p, .ht_SalaDeEspera ul li, .ht_SalaDeEspera h5 {
   font-family: "AchsNuevaSansRegular";
 }
-.htCirugiaBar p.featured, .htCirugiaBar ul li.featured {
-  background-color: #EAF3FE;
-  line-height: 30px;
+.ht_SalaDeEspera a {
+  font-family: "AchsNuevaSansMedium";
 }
-.htCirugiaBar a.btn-reserve {
-  background-color: #348fff;
+.ht_SalaDeEspera a.btn-primaryHt {
+  background-color: #2b6bdc;
   color: white;
   text-decoration: none;
 }
-.htCirugiaBar a.btn-reserve:hover {
+.ht_SalaDeEspera a.btn-primaryHt:hover {
   background-color: #002A6C;
 }
-.htCirugiaBar .prices__box {
-  background-color: #002A6C;
+.ht_SalaDeEspera button:focus {
+  box-shadow: none;
 }
-.htCirugiaBar .prices__box h4 {
-  color: #7EFF45;
+.ht_SalaDeEspera__admision .list-group-horizontal li, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li, .ht_SalaDeEspera__postAtencion .list-group-horizontal li {
+  border-color: #2b6bdc;
 }
-.htCirugiaBar .prices__box p, .htCirugiaBar .prices__box span {
-  font-size: 14px;
+.ht_SalaDeEspera__admision .list-group-horizontal li.active, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li.active, .ht_SalaDeEspera__postAtencion .list-group-horizontal li.active {
+  background-color: #2b6bdc !important;
 }
-.htCirugiaBar .prices__box-only {
-  background-color: #fff;
+.ht_SalaDeEspera__admision .list-group-horizontal li.active a, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li.active a, .ht_SalaDeEspera__postAtencion .list-group-horizontal li.active a {
+  color: white;
+  pointer-events: none;
 }
-.htCirugiaBar .prices__box h6, .htCirugiaBar .prices__box strong {
-  color: #348fff;
+.ht_SalaDeEspera__admision .list-group-horizontal li a, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li a, .ht_SalaDeEspera__postAtencion .list-group-horizontal li a {
+  color: #2b6bdc;
+  display: block;
+  font-family: "AchsNuevaSansRegular";
+  font-size: 15px;
+  text-decoration: none;
 }
-.htCirugiaBar .prices__box h6.pb-3, .htCirugiaBar .prices__box strong.pb-3 {
-  border-bottom: 1px solid #348fff;
+.ht_SalaDeEspera__admision .list-group-horizontal li:hover, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li:hover, .ht_SalaDeEspera__postAtencion .list-group-horizontal li:hover {
+  background-color: #EAF3FE;
 }
-.htCirugiaBar .prices__box strong {
+.ht_SalaDeEspera__admision-accordion .accordion-item, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item, .ht_SalaDeEspera__postAtencion-accordion .accordion-item {
+  border-color: #96C5FA;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button {
+  position: relative;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button.collapsed, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button.collapsed, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button.collapsed {
+  font-family: "AchsNuevaSansRegular";
+  font-size: 16px;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button.collapsed .icon-plus, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button.collapsed .icon-plus, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button.collapsed .icon-plus {
+  display: block;
+  position: absolute;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button.collapsed .icon-plus path, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button.collapsed .icon-plus path, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button.collapsed .icon-plus path {
+  fill: #2b6bdc;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button.collapsed .icon-minus, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button.collapsed .icon-minus, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button.collapsed .icon-minus {
+  display: none;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button:not(.collapsed), .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button:not(.collapsed), .ht_SalaDeEspera__postAtencion-accordion .accordion-item button:not(.collapsed) {
+  background-color: #2b6bdc;
+  color: white;
   font-family: "AchsNuevaSansBold";
 }
-.htCirugiaBar .tipoCirugias__box {
-  background-color: #D5E8FD;
-  text-align: left;
+.ht_SalaDeEspera__admision-accordion .accordion-item button:not(.collapsed) .icon-plus, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button:not(.collapsed) .icon-plus, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button:not(.collapsed) .icon-plus {
+  display: none;
 }
-.htCirugiaBar .tipoCirugias__box figure {
-  align-items: center;
+.ht_SalaDeEspera__admision-accordion .accordion-item button:not(.collapsed) .icon-minus, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button:not(.collapsed) .icon-minus, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button:not(.collapsed) .icon-minus {
+  position: absolute;
+  display: block;
+  right: 15px;
+  width: 25px;
+  height: 3px;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button:not(.collapsed) .icon-minus path, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button:not(.collapsed) .icon-minus path, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button:not(.collapsed) .icon-minus path {
+  fill: #fff;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-item button::after, .ht_SalaDeEspera__atencionMedica-accordion .accordion-item button::after, .ht_SalaDeEspera__postAtencion-accordion .accordion-item button::after {
+  display: none;
+}
+.ht_SalaDeEspera__admision-accordion .accordion-body ol li, .ht_SalaDeEspera__atencionMedica-accordion .accordion-body ol li, .ht_SalaDeEspera__postAtencion-accordion .accordion-body ol li {
+  font-family: "AchsNuevaSansRegular";
+}
+.ht_SalaDeEspera__admision-card, .ht_SalaDeEspera__atencionMedica-card, .ht_SalaDeEspera__postAtencion-card {
+  background-color: #EAF3FE;
+  border: 1px solid #d7d7d7;
+  text-decoration: none;
+}
+.ht_SalaDeEspera__admision-card .icon, .ht_SalaDeEspera__atencionMedica-card .icon, .ht_SalaDeEspera__postAtencion-card .icon {
   background-color: #fff;
+  margin-bottom: 15px;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
-  height: 70px;
-  width: 70px;
+  align-items: center;
 }
-.htCirugiaBar .tipoCirugias__box figure img {
+.ht_SalaDeEspera__admision-card .icon svg path, .ht_SalaDeEspera__admision-card .icon svg polygon, .ht_SalaDeEspera__admision-card .icon svg rect, .ht_SalaDeEspera__atencionMedica-card .icon svg path, .ht_SalaDeEspera__atencionMedica-card .icon svg polygon, .ht_SalaDeEspera__atencionMedica-card .icon svg rect, .ht_SalaDeEspera__postAtencion-card .icon svg path, .ht_SalaDeEspera__postAtencion-card .icon svg polygon, .ht_SalaDeEspera__postAtencion-card .icon svg rect {
+  fill: #348fff;
+}
+.ht_SalaDeEspera__admision-card .icon-document, .ht_SalaDeEspera__atencionMedica-card .icon-document, .ht_SalaDeEspera__postAtencion-card .icon-document {
+  width: 36px;
+  height: 39px;
+}
+.ht_SalaDeEspera__admision-card .icon-doctor, .ht_SalaDeEspera__atencionMedica-card .icon-doctor, .ht_SalaDeEspera__postAtencion-card .icon-doctor {
+  width: 35px;
+  height: 42px;
+}
+.ht_SalaDeEspera__admision-card .icon-post, .ht_SalaDeEspera__atencionMedica-card .icon-post, .ht_SalaDeEspera__postAtencion-card .icon-post {
+  width: 40px;
   height: 40px;
-  width: 37px;
 }
-.htCirugiaBar .tipoCirugias__box p {
-  line-height: 30px;
+.ht_SalaDeEspera__admision-card .icon-ambulance, .ht_SalaDeEspera__atencionMedica-card .icon-ambulance, .ht_SalaDeEspera__postAtencion-card .icon-ambulance {
+  width: 38px;
+  height: 26px;
 }
-.htCirugiaBar .equipoCirugia .splide__arrow {
-  bottom: -10px;
-  top: inherit;
+.ht_SalaDeEspera__admision-card .icon-medical, .ht_SalaDeEspera__atencionMedica-card .icon-medical, .ht_SalaDeEspera__postAtencion-card .icon-medical {
+  width: 45px;
+  height: 45px;
 }
-.htCirugiaBar .equipoCirugia__card {
-  color: #787878;
-  text-align: left;
-  height: 100%;
+.ht_SalaDeEspera__admision-card .icon-document2, .ht_SalaDeEspera__atencionMedica-card .icon-document2, .ht_SalaDeEspera__postAtencion-card .icon-document2 {
+  width: 46px;
+  height: 48px;
 }
-.htCirugiaBar .equipoCirugia__card figure {
-  height: 207px;
+.ht_SalaDeEspera__admision-card .icon-qualification, .ht_SalaDeEspera__atencionMedica-card .icon-qualification, .ht_SalaDeEspera__postAtencion-card .icon-qualification {
+  width: 48px;
+  height: 48px;
 }
-.htCirugiaBar .equipoCirugia__card figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 100%;
-  height: 100%;
+.ht_SalaDeEspera__admision-card .linked p strong, .ht_SalaDeEspera__atencionMedica-card .linked p strong, .ht_SalaDeEspera__postAtencion-card .linked p strong {
+  color: #373737;
+  font-family: "AchsNuevaSerifBold";
+  font-size: 20px;
+  max-width: 300px;
 }
-.htCirugiaBar .equipoCirugia__card p {
+.ht_SalaDeEspera__admision-card .linked p span, .ht_SalaDeEspera__atencionMedica-card .linked p span, .ht_SalaDeEspera__postAtencion-card .linked p span {
+  color: #348fff;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.ht_SalaDeEspera__admision-card:hover .linked p span, .ht_SalaDeEspera__atencionMedica-card:hover .linked p span, .ht_SalaDeEspera__postAtencion-card:hover .linked p span {
+  color: #373737;
+}
+.ht_SalaDeEspera__admision .row-steps a, .ht_SalaDeEspera__atencionMedica .row-steps a, .ht_SalaDeEspera__postAtencion .row-steps a {
+  color: #373737;
+}
+.ht_SalaDeEspera__admision .row-steps h4, .ht_SalaDeEspera__atencionMedica .row-steps h4, .ht_SalaDeEspera__postAtencion .row-steps h4 {
+  font-size: 24px;
+}
+.ht_SalaDeEspera__admision .row-steps h4 span, .ht_SalaDeEspera__atencionMedica .row-steps h4 span, .ht_SalaDeEspera__postAtencion .row-steps h4 span {
+  color: #348fff;
+  font-family: "AchsNuevaSerifBold";
+}
+.ht_SalaDeEspera__admision .row-steps .datosBox, .ht_SalaDeEspera__atencionMedica .row-steps .datosBox, .ht_SalaDeEspera__postAtencion .row-steps .datosBox {
+  background-color: #EAF3FE;
+  max-width: 400px;
+}
+.ht_SalaDeEspera__admision .row-steps .datosBox ul li, .ht_SalaDeEspera__atencionMedica .row-steps .datosBox ul li, .ht_SalaDeEspera__postAtencion .row-steps .datosBox ul li {
+  color: #5f5f5f;
+  font-family: "AchsNuevaSansRegular";
+}
+.ht_SalaDeEspera__admision .row-steps .datosBox ul li strong, .ht_SalaDeEspera__atencionMedica .row-steps .datosBox ul li strong, .ht_SalaDeEspera__postAtencion .row-steps .datosBox ul li strong {
+  font-family: "AchsNuevaSansBold";
+}
+.ht_SalaDeEspera__admision .row-steps .disclaimerHt, .ht_SalaDeEspera__atencionMedica .row-steps .disclaimerHt, .ht_SalaDeEspera__postAtencion .row-steps .disclaimerHt {
+  background-color: #f4f4f4;
+}
+.ht_SalaDeEspera__admision .row-steps .disclaimerHt .icon-info, .ht_SalaDeEspera__atencionMedica .row-steps .disclaimerHt .icon-info, .ht_SalaDeEspera__postAtencion .row-steps .disclaimerHt .icon-info {
+  width: 17px;
+  height: 17px;
+}
+.ht_SalaDeEspera__admision .row-steps .disclaimerHt .icon-info path, .ht_SalaDeEspera__atencionMedica .row-steps .disclaimerHt .icon-info path, .ht_SalaDeEspera__postAtencion .row-steps .disclaimerHt .icon-info path {
+  fill: #2b6bdc;
+}
+.ht_SalaDeEspera__admision .row-steps .disclaimerHt p, .ht_SalaDeEspera__atencionMedica .row-steps .disclaimerHt p, .ht_SalaDeEspera__postAtencion .row-steps .disclaimerHt p {
   font-size: 14px;
 }
-.htCirugiaBar .equipoCirugia__card span {
-  font-size: 12px;
+.ht_SalaDeEspera__didYouKnow-box {
+  border-radius: 17px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.ht_SalaDeEspera__didYouKnow-box figure {
+  border: 1px solid #96C5FA;
+  height: 200px;
+}
+.ht_SalaDeEspera__didYouKnow-box figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ht_SalaDeEspera__didYouKnow-box p {
+  color: #5f5f5f;
+  font-size: 16px;
+}
+.ht_SalaDeEspera__main-box {
+  border: 1px solid #348fff;
+  border-radius: 17px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.ht_SalaDeEspera__main-box .icon {
+  background-color: #f4f4f4;
+  margin-bottom: 15px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ht_SalaDeEspera__main-box .icon svg path, .ht_SalaDeEspera__main-box .icon svg polygon, .ht_SalaDeEspera__main-box .icon svg rect {
+  fill: #348fff;
+}
+.ht_SalaDeEspera__main-box .icon-admision {
+  width: 40px;
+  height: 40px;
+}
+.ht_SalaDeEspera__main-box .icon-doctor {
+  width: 35px;
+  height: 42px;
+}
+.ht_SalaDeEspera__main-box .icon-post {
+  width: 40px;
+  height: 40px;
+}
+.ht_SalaDeEspera__main-box h5 {
+  color: #002A6C;
+  font-size: 18px;
+}
+.ht_SalaDeEspera__main-box:hover {
+  background-color: #2b6bdc;
+  border-color: #2b6bdc;
+}
+.ht_SalaDeEspera__main-box:hover h5 {
+  color: white;
+}
+.ht_SalaDeEspera__more-info, .ht_SalaDeEspera__more-aboutAchs {
+  background-color: #EAF3FE;
+}
+.ht_SalaDeEspera__more-info p, .ht_SalaDeEspera__more-aboutAchs p {
+  font-size: 16px;
+}
+.ht_SalaDeEspera__more-info-box, .ht_SalaDeEspera__more-aboutAchs-box {
+  background-color: #fff;
+  border-radius: 17px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #2b6bdc;
+  font-family: "AchsNuevaSansBold";
+}
+.ht_SalaDeEspera__more-info-box figure, .ht_SalaDeEspera__more-aboutAchs-box figure {
+  height: 200px;
+}
+.ht_SalaDeEspera__more-info-box figure img, .ht_SalaDeEspera__more-aboutAchs-box figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ht_SalaDeEspera__more-info-box span.tag, .ht_SalaDeEspera__more-aboutAchs-box span.tag {
+  background-color: #D6E5F9;
+  color: #002A6C;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+.ht_SalaDeEspera__more-info-box span.tag svg, .ht_SalaDeEspera__more-aboutAchs-box span.tag svg {
+  width: 20px;
+  height: 20px;
+}
+.ht_SalaDeEspera__more-info-box span.tag svg path, .ht_SalaDeEspera__more-aboutAchs-box span.tag svg path {
+  fill: #002A6C;
+}
+.ht_SalaDeEspera__more-info-box span.timeRead, .ht_SalaDeEspera__more-aboutAchs-box span.timeRead {
+  color: #787878;
+  font-size: 14px;
+}
+.ht_SalaDeEspera__more-info-box span.timeRead svg, .ht_SalaDeEspera__more-aboutAchs-box span.timeRead svg {
+  width: 16px;
+  height: 16px;
+}
+.ht_SalaDeEspera__more-info-box span.timeRead svg path, .ht_SalaDeEspera__more-aboutAchs-box span.timeRead svg path {
+  fill: #787878;
+}
+.ht_SalaDeEspera__more-info-box h5, .ht_SalaDeEspera__more-aboutAchs-box h5 {
+  color: #373737;
+  font-family: "AchsNuevaSerifBold";
+}
+.ht_SalaDeEspera__more-info-box p, .ht_SalaDeEspera__more-aboutAchs-box p {
+  color: #373737;
 }/*# sourceMappingURL=styles.css.map */
