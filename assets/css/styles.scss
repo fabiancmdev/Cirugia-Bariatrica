@@ -408,8 +408,8 @@
 }
 @media (min-width: 200px) {
     .ht_SalaDeEspera {
-        .list-group {
-            &-item {
+        .list-group-horizontal {
+            .list-group-item {
                 width: 120px;
                 min-height: 58px;
                 display: flex;
@@ -429,8 +429,8 @@
                 }
             }
         }
-        .list-group {
-            &-item {
+        .list-group-horizontal {
+            .list-group-item {
                 min-width: 217px;
                 height: auto;
             }
