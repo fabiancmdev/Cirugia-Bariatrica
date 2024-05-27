@@ -74,7 +74,7 @@
   font-family: "AchsNuevaSansRegular";
 }
 .ht_SalaDeEspera a {
-  font-family: "AchsNuevaSansMedium";
+  font-family: "AchsNuevaSansBold";
 }
 .ht_SalaDeEspera a.btn-primaryHt {
   background-color: #2b6bdc;
@@ -103,6 +103,7 @@
   font-family: "AchsNuevaSansRegular";
   font-size: 15px;
   text-decoration: none;
+  line-height: 18px;
 }
 .ht_SalaDeEspera__admision .list-group-horizontal li:hover, .ht_SalaDeEspera__atencionMedica .list-group-horizontal li:hover, .ht_SalaDeEspera__postAtencion .list-group-horizontal li:hover {
   background-color: #EAF3FE;
@@ -364,8 +365,22 @@
   color: #373737;
 }
 
+@media (min-width: 200px) {
+  .ht_SalaDeEspera .list-group-item {
+    width: 120px;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (min-width: 992px) {
   .ht_SalaDeEspera__postAtencion .row-steps .datosBox {
     max-width: 400px;
+  }
+  .ht_SalaDeEspera .list-group-item {
+    min-width: 217px;
+    height: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
